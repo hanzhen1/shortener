@@ -1,0 +1,15 @@
+Name: shortener-api
+Host: 0.0.0.0
+Port: 8888
+#实际开发中取号器和存储应该是两个库
+SequenceDB:
+  DSN: root:abc123@tcp(127.0.0.1:3306)/mall?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai
+ShortUrlDB:
+  DSN: root:abc123@tcp(127.0.0.1:3306)/mall?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai
+CacheRedis:
+  - Host: 127.0.0.1:6379
+Redis:
+  Host: 127.0.0.1:6379
+BaseString: aWc9de0fgSi2jklNmn1opqEhUsbTvw3yzABC4DFGHxIJrKuL5MOP6QtR7VXY8Z
+ShortUrlBlackList: ["version","api","fuck","health","convert","stupid","css","js"]
+ShortDomain: q1mi.cn
